@@ -6,6 +6,9 @@ function Thermostat(){
 };
 
 Thermostat.prototype.up = function(){
+  if(this._temperature > this._maximumTemperature) {
+    throw "Maximum temperature reached bro!"
+  };
   this._temperature++;
 };
 

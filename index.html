@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title> ThermoStat </title>
+</head>
+<h1> Welcome to the hottest Thermostat around!</h1>
+<body>
+    <script src="interface.js"></script>
+    <script src="jquery.js"></script>
+    <script src="src/Thermostat.js"></script>  
+  <section> 
+  <p>
+    <h1 id ='temperature'></h1>
+    <button id='temp-up'>+</button>
+    <button id='temp-down'>-</button>
+    <button id='temperature-reset'>reset</button>
+    power saving mode is <span id="power-saving-status">on</span>
+    <button id="powersaving-on">PSM on</button>
+    <button id="powersaving-on">PSM off</button>
+  </section>
+  </p>
+
+
+
+<script>
+    $( document ).ready(function() {
+        $( "a" ).click(function( event ) {
+            alert( "The link will no longer take you to jquery.com" );
+            event.preventDefault();
+        });
+    });
+    </script>
+</body>
+</html>
